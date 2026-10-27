@@ -66,13 +66,11 @@
 
 `Python` `binance.vision` · [Repository](https://github.com/yu-cc-patrick/volume-spike-research)
 
-### 07 · 元监控
+## 另外
 
-**监控那些监控器的监控器**
+还有一套**元监控**在私有仓库运行：每天巡检上述项目的 GitHub Actions 状态（任务失败、运行超时、接近 60 天被平台自动停用），异常时推 Telegram，正常时发心跳。
 
-GitHub Actions 有两种静默死亡：任务失败没人看，以及仓库 60 天无提交后被平台自动停用。这个项目每天巡检所有预警仓库的 workflow 结论、运行时效和仓库活跃度，异常推 Telegram，正常发心跳。
-
-`Python` `GitHub REST API` `GitHub Actions` · [Repository](https://github.com/yu-cc-patrick/monitor-health)
+预警系统本身也需要被监控——这是上面这些系统能长期跑下去的原因。
 
 ## 技术栈
 
